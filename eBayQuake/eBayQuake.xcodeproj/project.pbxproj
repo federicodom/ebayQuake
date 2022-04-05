@@ -56,6 +56,10 @@
 		6C20A7BF27FCB5720021DDDF /* eBayQuake */ = {
 			isa = PBXGroup;
 			children = (
+				6C20A7D827FCB7010021DDDF /* Models */,
+				6C20A7D727FCB6F90021DDDF /* Screens */,
+				6C20A7D627FCB6F00021DDDF /* Utilities */,
+				6C20A7D527FCB6E70021DDDF /* Views */,
 				6C20A7D427FCB5890021DDDF /* Configuration */,
 				6C20A7C427FCB5720021DDDF /* ViewController.swift */,
 				6C20A7C627FCB5720021DDDF /* Main.storyboard */,
@@ -73,6 +77,66 @@
 				6C20A7CE27FCB5740021DDDF /* Info.plist */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		6C20A7D527FCB6E70021DDDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C20A7D627FCB6F00021DDDF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6C20A7DA27FCB7280021DDDF /* Extensions */,
+				6C20A7D927FCB7200021DDDF /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6C20A7D727FCB6F90021DDDF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6C20A7DB27FCB7450021DDDF /* Home */,
+				6C20A7DC27FCB7530021DDDF /* Location */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6C20A7D827FCB7010021DDDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C20A7D927FCB7200021DDDF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6C20A7DA27FCB7280021DDDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C20A7DB27FCB7450021DDDF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C20A7DC27FCB7530021DDDF /* Location */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
