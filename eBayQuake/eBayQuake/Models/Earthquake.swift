@@ -7,10 +7,8 @@
 
 import Foundation
 
-
-
 struct EarthquakeResponse: Codable {
-    let data: [Earthquake]
+    let earthquakes: [Earthquake]
 }
 
 struct Earthquake: Codable {
