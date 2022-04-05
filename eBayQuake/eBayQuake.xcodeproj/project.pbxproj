@@ -16,6 +16,8 @@
 		6C20A7DE27FCB7B50021DDDF /* Earthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7DD27FCB7B50021DDDF /* Earthquake.swift */; };
 		6C20A7E027FCB95A0021DDDF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7DF27FCB95A0021DDDF /* NetworkManager.swift */; };
 		6C20A7E327FCB9B00021DDDF /* EarthquakeApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7E227FCB9B00021DDDF /* EarthquakeApiError.swift */; };
+		6C20A7E527FCC8460021DDDF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7E427FCC8460021DDDF /* Endpoint.swift */; };
+		6C20A7E727FCC9070021DDDF /* EarthquakeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7E627FCC9070021DDDF /* EarthquakeApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6C20A7DD27FCB7B50021DDDF /* Earthquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquake.swift; sourceTree = "<group>"; };
 		6C20A7DF27FCB95A0021DDDF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6C20A7E227FCB9B00021DDDF /* EarthquakeApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeApiError.swift; sourceTree = "<group>"; };
+		6C20A7E427FCC8460021DDDF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		6C20A7E627FCC9070021DDDF /* EarthquakeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		6C20A7BF27FCB5720021DDDF /* eBayQuake */ = {
 			isa = PBXGroup;
 			children = (
+				6C20A7D927FCB7200021DDDF /* Network */,
 				6C20A7D827FCB7010021DDDF /* Models */,
 				6C20A7D727FCB6F90021DDDF /* Screens */,
 				6C20A7D627FCB6F00021DDDF /* Utilities */,
@@ -95,9 +100,7 @@
 		6C20A7D627FCB6F00021DDDF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				6C20A7E127FCB9920021DDDF /* Errors */,
 				6C20A7DA27FCB7280021DDDF /* Extensions */,
-				6C20A7D927FCB7200021DDDF /* Managers */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -119,12 +122,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		6C20A7D927FCB7200021DDDF /* Managers */ = {
+		6C20A7D927FCB7200021DDDF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				6C20A7E127FCB9920021DDDF /* Errors */,
+				6C20A7E427FCC8460021DDDF /* Endpoint.swift */,
 				6C20A7DF27FCB95A0021DDDF /* NetworkManager.swift */,
+				6C20A7E627FCC9070021DDDF /* EarthquakeApi.swift */,
 			);
-			path = Managers;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		6C20A7DA27FCB7280021DDDF /* Extensions */ = {
@@ -227,12 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C20A7E527FCC8460021DDDF /* Endpoint.swift in Sources */,
 				6C20A7E327FCB9B00021DDDF /* EarthquakeApiError.swift in Sources */,
 				6C20A7C527FCB5720021DDDF /* ViewController.swift in Sources */,
 				6C20A7C127FCB5720021DDDF /* AppDelegate.swift in Sources */,
 				6C20A7E027FCB95A0021DDDF /* NetworkManager.swift in Sources */,
 				6C20A7DE27FCB7B50021DDDF /* Earthquake.swift in Sources */,
 				6C20A7C327FCB5720021DDDF /* SceneDelegate.swift in Sources */,
+				6C20A7E727FCC9070021DDDF /* EarthquakeApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
