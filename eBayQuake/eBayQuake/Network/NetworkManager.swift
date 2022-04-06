@@ -14,7 +14,7 @@ final class NetworkManager {
         
     private init() {}
     
-    func getEarthquake(completion: @escaping (Result<EarthquakeResponse, EarthquakeApiError>) -> Void) {
+    func getEarthquakes(completion: @escaping (Result<EarthquakeResponse, EarthquakeApiError>) -> Void) {
         let endpoint = EarthquakeApi.getEarthquakes
         request(endpoint: endpoint, completion: completion)
     }
