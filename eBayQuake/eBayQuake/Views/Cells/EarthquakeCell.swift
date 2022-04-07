@@ -14,6 +14,7 @@ class EarthquakeCell: UITableViewCell {
     private lazy var magnitudeLabel = UILabel()
     private lazy var depthLabel = UILabel()
     private lazy var dateTimeLabel = UILabel()
+    private lazy var locationImageView = UIImageView()
     
     private let padding: CGFloat = 20
     
@@ -27,6 +28,8 @@ class EarthquakeCell: UITableViewCell {
         configureDateTimeLabel()
         configureSourceLabel()
         configureDepthLabel()
+        configureLocationImageView()
+        self.accessoryType = .disclosureIndicator
     }
     
     required init?(coder: NSCoder) {
@@ -39,7 +42,7 @@ class EarthquakeCell: UITableViewCell {
         magnitudeLabel.text = viewModel.magnitude
         magnitudeLabel.textColor = viewModel.isBigMagnitudeEarthquake() ? Colors.earthquakeRed : Colors.earthquakeGreen
         dateTimeLabel.text = viewModel.date
-        sourceLabel.text = viewModel.source
+        sourceLabel.text = "Source: \(viewModel.source)"
         depthLabel.text = "Depth: \(viewModel.depth)"
         
         iconImageView.image = viewModel.isBigMagnitudeEarthquake() ? Images.icEarthquakeWarning : Images.icEarthquake
@@ -125,6 +128,21 @@ private extension EarthquakeCell {
             depthLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: padding),
             depthLabel.topAnchor.constraint(equalTo: sourceLabel.bottomAnchor, constant: 2),
             depthLabel.heightAnchor.constraint(equalToConstant: 10)
+
+        ])
+    }
+    
+    func configureLocationImageView() {
+      
+        locationImageView.image =  Images.icEarthquakeLocation
+        contentView.addSubview(locationImageView)
+        locationImageView.translatesAutoresizingMaskIntoConstraints = false
+       
+        NSLayoutConstraint.activate([
+            locationImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            locationImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding),
+            locationImageView.heightAnchor.constraint(equalToConstant: 20),
+            locationImageView.widthAnchor.constraint(equalToConstant: 20)
 
         ])
     }

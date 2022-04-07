@@ -33,7 +33,4 @@ final class EarthquakeCellViewModel {
      func isBigMagnitudeEarthquake() -> Bool {
         return self.earthquake.magnitude >= 8 ? true : false
     }
-    
-    
-    
 }

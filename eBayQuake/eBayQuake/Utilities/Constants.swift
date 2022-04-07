@@ -10,6 +10,7 @@ import UIKit
 enum Images {
     static let icEarthquake = UIImage(named: "ic_Earthquake")
     static let icEarthquakeWarning = UIImage(named: "ic_EarthquakeWarning")
+    static let icEarthquakeLocation = UIImage(named: "ic_EarthquakeLocation")
 }
 
 enum Colors {
@@ -19,6 +20,4 @@ enum Colors {
     static let subtitle = UIColor(named: "Subtitle")
     static let secondTitleLabel = UIColor(named: "SecondTitleLabel")
     static let datetimeLabel = UIColor(named: "DatetimeLabel")
-    static let appred = UIColor(named: "red")
-    static let greenStrong = UIColor(named: "green")
 }

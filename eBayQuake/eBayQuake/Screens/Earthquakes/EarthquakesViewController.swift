@@ -24,7 +24,6 @@ final class EarthquakesViewController: UITableViewController {
     }
     
     // MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(EarthquakeCell.self, forCellReuseIdentifier: EarthquakeCellViewModel.reuseIdentifier)
@@ -45,10 +44,6 @@ final class EarthquakesViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    func configureViewController() {
-        view.backgroundColor = .systemBackground
-        title = "Earthquakes"
-    }
 }
 
 // MARK: - EarthquakesViewModelDelegate
@@ -117,6 +112,11 @@ extension EarthquakesViewController {
             activityIndicatorView.topAnchor.constraint(equalTo: tableView.safeAreaLayoutGuide.topAnchor, constant: 150),
             activityIndicatorView.centerXAnchor.constraint(equalTo: tableView.centerXAnchor),
         ])
+    }
+    
+    func configureViewController() {
+        view.backgroundColor = .systemBackground
+        title = "Earthquakes"
     }
 }
 
