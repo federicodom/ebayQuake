@@ -83,8 +83,8 @@ extension EarthquakesViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let destinationViewController = UIViewController()
-        destinationViewController.view.backgroundColor = .brown
+        let viewModel = EarthquakeLocationViewModel(earthquake: viewModel.cellForRowAt(indexPath: indexPath))
+        let destinationViewController = EarthquakeLocationViewController(earthquakeViewModel: viewModel)
         navigationController?.pushViewController(destinationViewController, animated: true)
     }
     

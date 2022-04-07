@@ -23,6 +23,8 @@
 		6C20A7F227FCD6810021DDDF /* EarthquakeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7F127FCD6810021DDDF /* EarthquakeCellViewModel.swift */; };
 		6C20A7F627FDE5020021DDDF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C20A7F527FDE5020021DDDF /* Colors.xcassets */; };
 		6C20A7F827FDE5F10021DDDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7F727FDE5F10021DDDF /* Constants.swift */; };
+		6C20A7FC27FF67360021DDDF /* EarthquakeLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7FB27FF67360021DDDF /* EarthquakeLocationViewController.swift */; };
+		6C20A7FE27FF75400021DDDF /* EarthquakeLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20A7FD27FF75400021DDDF /* EarthquakeLocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		6C20A7F127FCD6810021DDDF /* EarthquakeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeCellViewModel.swift; sourceTree = "<group>"; };
 		6C20A7F527FDE5020021DDDF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		6C20A7F727FDE5F10021DDDF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6C20A7FB27FF67360021DDDF /* EarthquakeLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeLocationViewController.swift; sourceTree = "<group>"; };
+		6C20A7FD27FF75400021DDDF /* EarthquakeLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeLocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 		6C20A7DC27FCB7530021DDDF /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				6C20A7FB27FF67360021DDDF /* EarthquakeLocationViewController.swift */,
+				6C20A7FD27FF75400021DDDF /* EarthquakeLocationViewModel.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -263,11 +269,13 @@
 				6C20A7F227FCD6810021DDDF /* EarthquakeCellViewModel.swift in Sources */,
 				6C20A7E027FCB95A0021DDDF /* NetworkManager.swift in Sources */,
 				6C20A7DE27FCB7B50021DDDF /* Earthquake.swift in Sources */,
+				6C20A7FC27FF67360021DDDF /* EarthquakeLocationViewController.swift in Sources */,
 				6C20A7E927FCD0B70021DDDF /* EarthquakesViewController.swift in Sources */,
 				6C20A7EB27FCD0CD0021DDDF /* EarthquakesViewModel.swift in Sources */,
 				6C20A7C327FCB5720021DDDF /* SceneDelegate.swift in Sources */,
 				6C20A7F827FDE5F10021DDDF /* Constants.swift in Sources */,
 				6C20A7EF27FCD6580021DDDF /* EarthquakeCell.swift in Sources */,
+				6C20A7FE27FF75400021DDDF /* EarthquakeLocationViewModel.swift in Sources */,
 				6C20A7E727FCC9070021DDDF /* EarthquakeApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
