@@ -34,7 +34,6 @@ class EarthquakeLocationViewController: UIViewController {
         let coordinate = earthquakeViewModel.getEarthquakeCoordinate()
         let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         let region = MKCoordinateRegion.init(center: coordinate, span: span)
-        
         mapView.setRegion(region, animated: true)
         
         let pin = MKPointAnnotation()
@@ -43,7 +42,7 @@ class EarthquakeLocationViewController: UIViewController {
     }
 }
 
-extension EarthquakeLocationViewController {
+private extension EarthquakeLocationViewController {
     
     func configureMapView() {
         mapView.translatesAutoresizingMaskIntoConstraints = false

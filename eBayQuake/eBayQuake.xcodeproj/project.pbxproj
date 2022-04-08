@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				6C20A7DB27FCB7450021DDDF /* Earthquakes */,
-				6C20A7DC27FCB7530021DDDF /* Location */,
+				6C20A7DC27FCB7530021DDDF /* EarthquakeLocation */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -165,13 +165,13 @@
 			path = Earthquakes;
 			sourceTree = "<group>";
 		};
-		6C20A7DC27FCB7530021DDDF /* Location */ = {
+		6C20A7DC27FCB7530021DDDF /* EarthquakeLocation */ = {
 			isa = PBXGroup;
 			children = (
 				6C20A7FB27FF67360021DDDF /* EarthquakeLocationViewController.swift */,
 				6C20A7FD27FF75400021DDDF /* EarthquakeLocationViewModel.swift */,
 			);
-			path = Location;
+			path = EarthquakeLocation;
 			sourceTree = "<group>";
 		};
 		6C20A7E127FCB9920021DDDF /* Errors */ = {

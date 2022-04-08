@@ -41,7 +41,7 @@ class EarthquakeCell: UITableViewCell {
         
         magnitudeLabel.text = viewModel.magnitude
         magnitudeLabel.textColor = viewModel.isBigMagnitudeEarthquake() ? Colors.earthquakeRed : Colors.earthquakeGreen
-        dateTimeLabel.text = viewModel.date
+        dateTimeLabel.text = " :calendar: \(viewModel.date)"
         sourceLabel.text = "Source: \(viewModel.source)"
         depthLabel.text = "Depth: \(viewModel.depth)"
         
